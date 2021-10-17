@@ -1,126 +1,107 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>ZeroArea零次元</title>
-    
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="apple-mobile-app-capable" content="yes">
-    <meta name="apple-mobile-app-status-bar-style" content="black">
-   
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="cononico">
-    <meta name="application-name" content="Cononico" >
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>明与暗的交界处</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/loading_style_slowout.css" />
+		<link rel="shortcut icon"  type="image/x-icon" href="favicon.ico" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/process.css">
-    <link rel="shortcut icon"  type="image/x-icon" href="favicon.ico" />
-    
-    <script type="text/javascript">
-        //设定rem值
-        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth/20 + 'px';
-    </script>
-</head>
-<body>
-	<header class="head">
-        <div class="head_logo_div">
-            <img class="logo_img" src="images/upload/logo_min.png"></a>
-        </div>
-        <div class="head_nav_div">
-             <nav class="head_nav">
-                <ul id="nav_ul">
-                    <li class="nav_netdisk">进入网盘</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="clear"></div>
-    </header>
-    
-    <ul style="display:none;" class="float_btn" id="float_btn">
-        <li class="btn_on"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    
-    <div class="wrapBox" id="wrapBox">
-        <div class="box">
-            <img class="box_bg" src="images/upload/88.jpg">
-            <div class="box01_content">
-                <div class="head_div">
-                    <div class="cycle_item">
-                        <div style="display:none;" class="round_button">
-						<a href="https://yoomeili.cn" class="github_a" id="github_a" target="_blank">
-                            <span class="github_icon"></span>
-                            <span class="github_text"><p class="item_name">GitHub</p></span>
-                        </a>
-                        <a href="http://blog.yoomeili.cn" class="weibo_a" id="weibo_a" target="_blank">
-                            <span class="weibo_icon"></span>
-                            <span class="weibo_text"><p class="item_name">微博</p> </span>
-                        </a>
-                        <a href="http://blog.yoomeili.cn" class="blog_a" id="blog_a" target="_blank">
-                            <span class="blog_icon"></span>
-                            <span class="blog_text"><p class="item_name"> 博客</p></span>
-                        </a>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">明与暗の交界处</a></li>
+							<li><a href="#one">云の间的信息</a></li>
+							<!--<li><a href="#two">关于零次元</a></li>-->
+							<li><a href="https://cloud.zeroarea.ml:5251">进入零次元云の间→</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner" style="filter: drop-shadow(2px 4px 6px black);">
+							<h1>明与暗の交界处</h1>
+							<p>这是一个次元交织の地方.<br />
+							零次元云の间.</p>
+							<ul class="actions">
+								<li><a href="https://cloud.zeroarea.ml:5251" class="button scrolly">进入云の间</a></li>
+							</ul>
 						</div>
-                        <div class="green_cycle">
-                            <img class="green_cycle_img" src="images/icon/green_cycle.svg">
-                            <div class="yellow_cycle">
-                                <img class="yellow_cycle_img" src="images/icon/yellow_cycle.svg">
-                                <div class="blue_cycle">
-                                    <img class="blue_cycle_img" src="images/icon/blue_cycle.svg">
-                                    <div class="head_img_div">
-                                        <img class="head_img" src="images/upload/logo.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--<h1 class="title">黑夜</h1>
-                <h2 class="title_h2">千里之行，始于足下</h2>-->
-                <div id="box01_text">
-                <p class="box01_p">不久前还只是一个失业农民工.</p>
-                <p class="box01_p">现在还只是一只喜欢动漫和文学的学生党.</p>
-                <p class="box01_p">不久以后将是又一个人生迷茫的旅行者.</p>
-                </div>
-            </div>
-            <div style="display:none;" class="arrow_div">
-                <img class="arrow_img" src="images/icon/arrowhead.png">
-            </div>
-        </div>
-        
-        <div style="display:none;" class="box">
-            <img class="box_bg" src="images/upload/pic_2.jpg">
-            
-            <div class="box02_content box_content">
-                <div id='bar_container' class="bar_container">
-                </div>
-                <div id="box02_text">
-                </div>
-                <div class="clear"></div>
-            </div>
-            
-            <div class="arrow_div">
-                <img class="arrow_img" src="images/icon/arrowhead.png">
-            </div>
-            
-        </div>
-        
-            <div class="foot_power">
-                <h3>©2020
-                    
-                   
-                    
-                </h3>
-            </div>
-        </foot>
-    </div>
-	<script type="text/javascript" src="js/sakura.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
-    
-</html>
+					</section>
 
- 
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section style="background-image: url(images/pic01.png); background-size: cover;">
+							<!--<a href="#one" class="image"><img src="images/pic01.png" alt="" data-position="center center" /></a>-->
+							<div class="content">
+								<div class="inner">
+									<h2>次元间的交织</h2>
+									<p>在这里发现次元间的特殊交织，体验次元的魅力.</p>
+									<ul class="actions">
+										<li><a href="https://cloud.zeroarea.ml:5251" class="button">进入云の间</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section style="background-image: url(images/pic02.png); background-size: cover;">
+							<!--<a href="#one" class="image"><img src="images/pic02.png" alt="" data-position="top center" /></a>-->
+							<div class="content">
+								<div class="inner">
+									<h2>存于云の间</h2>
+									<p>零次元云の间是完全为零次元的大家开放的.</p>
+									<ul class="actions">
+										<li><a href="https://cloud.zeroarea.ml:5251" class="button">进入云の间</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section style="background-image: url(images/pic03.png); background-size: cover;">
+							<!--<a href="#one" class="image"><img src="images/pic03.png" alt="" data-position="25% 25%" /></a>-->
+							<div class="content">
+								<div class="inner">
+									<h2>分享于云の间</h2>
+									<p>没有任何下载速度、文件大小、客户端等限制，空间也将是大家公用所有（目前搭建120GB）.</p>
+									<ul class="actions">
+										<li><a href="https://cloud.zeroarea.ml:5251" class="button">进入云の间</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; ZeroArea零次元. All rights reserved.</li><li>Design: <!--<a href="https://wenqiblog.ml">零次元の闻柒</a>-->零次元＆闻柒</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

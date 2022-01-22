@@ -6,6 +6,8 @@
 		<Link Rel="SHORTCUT ICON" href="favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/player.css" />
+		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -58,10 +60,59 @@
 					<footer id="footer">
 						<p class="copyright">&copy; 2022 | 零次元＆闻柒</p>
 						<p class="copyright">▶从新开始，誓往未来◀</p>
+						<p class="copyright">※云の间将会于 每周六 凌晨3:00-3:10 时进行网络维护!</p>
 						<p class="copyright">背景图PID:79776133</p>
 					</footer>
 
 			</div>
+
+		<!-- Player By Wenqi -->
+		<div id="dowebok" class="hide">
+			<div id="player">
+				<div id="player-trackbg"></div>
+				<div id="player-track">
+					<div id="track-name"></div>
+					<div id="album-name"></div>
+					<div id="track-time">
+						<div id="current-time"></div>
+						<div id="track-length"></div>
+					</div>
+					<div id="s-area">
+						<div id="ins-time"></div>
+						<div id="s-hover"></div>
+						<div id="seek-bar"></div>
+					</div>
+				</div>
+				<div id="player-content">
+					<div class="scontrol">
+						<div class="sbutton" id="hide-show">
+							展开<br>--<br>隐藏
+						</div>
+					</div>
+					<div id="album-art">
+						<img src="" class="active" id="album-pic">
+						<div id="buffer-box">加载中...</div>
+					</div>
+					<div id="player-controls">
+						<div class="control">
+							<div class="button" id="play-previous">
+								<i class="fa fa-backward"></i>
+							</div>
+						</div>
+						<div class="control">
+							<div class="button" id="play-pause-button">
+								<i class="fa fa-play"></i>
+							</div>
+						</div>
+						<div class="control">
+							<div class="button" id="play-next">
+								<i class="fa fa-forward"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- BG -->
 			<div class="bg"></div>
@@ -72,6 +123,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/player.js"></script>
 			<!-- <script src="assets/js/sakura.js"></script> -->
 
 	</body>

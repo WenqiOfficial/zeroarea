@@ -116,6 +116,7 @@
 
 		<!-- BG -->
 			<div class="bg"></div>
+			<div id="particles-js"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -123,8 +124,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/particles.js"></script>
 			<script src="assets/js/player.js"></script>
 			<!-- <script src="assets/js/sakura.js"></script> -->
+			<script>
+				particlesJS.load('particles-js', 'assets/particles.json', function() {
+				  console.log('callback - particles.js config loaded');
+				});
+			</script>
 
 	</body>
 </html>

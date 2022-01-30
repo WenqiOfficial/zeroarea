@@ -14,18 +14,16 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    width: 555px;
-    height: 100px;
+    width: 35%;
+    height: 13.5%;
+    min-width: 493px;
+    min-height: 100px;
     transition: left 0.3s ease 0s;
     /*margin: -4px auto;*/
 }
 
-#dowebok.off {
-    display: none;
-}
-
 #dowebok.hide {
-    left: -532px;
+    left: -33.5%;
 }
 
 #hide-show {

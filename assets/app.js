@@ -1,3 +1,18 @@
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
+
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
+
+/* Otherwise just put the config content (json): */
+
+particlesJS('particles-js',
+  
 {
   "particles": {
     "number": {
@@ -88,7 +103,7 @@
         }
       },
       "bubble": {
-        "distance": 250,
+        "distance": 100,
         "size": 0,
         "duration": 2,
         "opacity": 0,
@@ -108,3 +123,5 @@
   },
   "retina_detect": true
 }
+
+);

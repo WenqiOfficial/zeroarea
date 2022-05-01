@@ -11,7 +11,7 @@ function change_icon() {
                 }
             };
             // 设置图标地址
-            let iconUrl = `//tablad.ml/favicon.ico`
+            let iconUrl = `https://tablad.ml/favicon.ico`
             // 动态修改网站图标
             changeFavicon(iconUrl); 
         }

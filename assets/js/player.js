@@ -1,5 +1,8 @@
 $(function () {
     var playerTrack = $("#player-track"),
+        playico = $("#playico"),
+        pauseico = $("#pauseico"),
+        loadingico = $("#loadingico"),
         playerAll = $("#dowebok"),
         playerTrackbg = $("#player-trackbg"),
         bgArtwork = $('#bg-artwork'),
@@ -36,6 +39,7 @@ $(function () {
                 albumArt.addClass('active');
                 checkBuffering();
                 i.attr('class', 'fa fa-pause');
+                playico.addClass('hideico');
                 audio.play();
             } else {
                 playerTrack.removeClass('active');
@@ -44,6 +48,8 @@ $(function () {
                 clearInterval(buffInterval);
                 albumArt.removeClass('buffering');
                 i.attr('class', 'fa fa-play');
+                pauseico.addClass('hideico');
+                playico.removeClass('hideico');
                 audio.pause();
             }
         }, 300);
@@ -52,8 +58,12 @@ $(function () {
     function firstplay() {
         setTimeout(function () {
             if (audio.paused) {
-                i.attr('class', 'fa fa-pause');
                 audio.play()
+                if (audio.paused == "false") {
+                    playico.addClass('hideico');
+                    i.attr('class', 'fa fa-pause');
+                    pauseico.removeClass('hideico');
+                }
             }
         }, 300);
     }
@@ -166,11 +176,15 @@ $(function () {
     function checkBuffering() {
         clearInterval(buffInterval);
         buffInterval = setInterval(function () {
-            if ((nTime == 0) || (bTime - nTime) > 1000)
+            if ((nTime == 0) || (bTime - nTime) > 1000) {
                 albumArt.addClass('buffering');
-            else
+                loadingico.removeClass('hideico');
+            }
+            else{
                 albumArt.removeClass('buffering');
-
+                loadingico.addClass('hideico');
+                pauseico.removeClass('hideico');
+            }
             bTime = new Date();
             bTime = bTime.getTime();
 
@@ -242,6 +256,8 @@ $(function () {
         audio.loop = false;
 
         playPauseButton.on('click', playPause);
+        playico.on('click',playPause);
+        pauseico.on('click',playPause);
 
         firstplay();
 

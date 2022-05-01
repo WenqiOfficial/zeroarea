@@ -8,6 +8,14 @@ body {
     background-color: #ffeff5;
 }
 
+.hideico {
+    opacity: 0;
+}
+
+.playerico {
+    transition: all 0.3s ease;
+}
+
 #dowebok {
     position: absolute;
     /*top: 50%;*/

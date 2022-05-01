@@ -1,4 +1,4 @@
-setTimeout(change_icon,3000)
+setTimeout(change_icon,1500)
 function change_icon() {
             const changeFavicon = link => {
                 let $favicon = document.querySelector('link[rel="icon"]');

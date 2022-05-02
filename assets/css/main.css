@@ -1133,10 +1133,10 @@ input, select, textarea {
 		}
 
 		.bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
+			-moz-transition: background-color 2.3s ease-in-out;
+			-webkit-transition: background-color 2.3s ease-in-out;
+			-ms-transition: background-color 2.3s ease-in-out;
+			transition: background-color 2.3s ease-in-out;
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
@@ -1150,6 +1150,9 @@ input, select, textarea {
  repeat;
 			z-index: 2;
 		}
+		:root {
+			--imgurl: url("https://cloud.zeroarea.ml:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0");
+		}
 
 		.bg:after {
 			-moz-transform: scale(1.125);
@@ -1160,7 +1163,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("https://cloud.zeroarea.ml:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8%3D%3A0");
+			background-image: var(--imgurl);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1173,7 +1176,7 @@ input, select, textarea {
 			animation-fill-mode: both;
 		}
 
-		body.is-article-visible .bg:after {
+		body.is-article-visible .bg:after, body.is-article-visible #bgbox {
 			-moz-transform: scale(1.0825);
 			-webkit-transform: scale(1.0825);
 			-ms-transform: scale(1.0825);
@@ -1186,6 +1189,14 @@ input, select, textarea {
 
 		body.is-preload .bg:before {
 			background-color: #000000;
+		}
+
+		#bgbox.black .bg:before {
+			background-color: #000000;
+			-moz-transition: background-color 0.75s ease-in-out;
+			-webkit-transition: background-color 0.75s ease-in-out;
+			-ms-transition: background-color 0.75s ease-in-out;
+			transition: background-color 0.75s ease-in-out;
 		}
 		
 		@keyframes bgmove {
@@ -1205,16 +1216,7 @@ input, select, textarea {
 			position: fixed;
 			z-index: -1;
 		}
-		body.is-article-visible #bgbox {
-			-moz-transform: scale(1.0825);
-			-webkit-transform: scale(1.0825);
-			-ms-transform: scale(1.0825);
-			transform: scale(1.0825);
-			-moz-filter: blur(0.2rem);
-			-webkit-filter: blur(0.2rem);
-			-ms-filter: blur(0.2rem);
-			filter: blur(0.2rem);
-	}
+		
 
 /* Wrapper */
 

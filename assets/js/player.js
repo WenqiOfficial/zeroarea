@@ -58,12 +58,16 @@ $(function () {
     function firstplay() {
         setTimeout(function () {
             if (audio.paused) {
-                audio.play()
-                if (audio.paused == "false") {
+                audio.play();
+                if (audio.paused == "false") { 
                     playico.addClass('hideico');
                     i.attr('class', 'fa fa-pause');
                     pauseico.removeClass('hideico');
-                }
+                }else
+                {
+                    playico.removeClass('hideico');
+                    pauseico.addClass('hideico');
+                }//自动播放结果判断
             }
         }, 300);
     }

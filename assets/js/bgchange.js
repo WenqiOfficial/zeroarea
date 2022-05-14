@@ -18,9 +18,11 @@ $(function () {
     pic[2]="https://cloud.zeroarea.ml:5221/api/v3/file/get/553/pic03new.webp?sign=-6tPKe7D5bo6Q4FA4q-if_mTwdDbJPvbo8Q7J1mnoIc%3D%3A0";
     picpid[2]= 76685776
 
-    //切换间隔时间（毫秒）
-    var timeInterval=12000; 
-    setInterval(randompic,timeInterval);
+    $window.on('load', function() {
+        //切换间隔时间（毫秒）
+        var timeInterval=12000; 
+        setInterval(randompic,timeInterval);
+    });
 
     function randompic () {
         //命运抉择之时(

@@ -6,8 +6,8 @@
 		<Link Rel="SHORTCUT ICON" href="main_circle.svg">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/NZ-Plugin/Css/NZ-MsgBox.min.css" />
 		<link rel="stylesheet" href="assets/css/player.css" />
-		<!-- <link rel="stylesheet" href="assets/css/alert.css" /> -->
 		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -29,15 +29,16 @@
 							<div class="inner">
 								<h1>明与暗の交界处</h1>
 								<p>这是一个次元交织の地方.<br/>
-								☆云の间☆</p>
+								<a id="yun">☆云の间☆</a></p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#detail">云·详</a></li>
-								<li><a target="_blank" href="https://cloud.zeroarea.ml:5221/s/Kdf2">共享目录</a></li>
-								<li><a target="_blank" href="https://cloud.zeroarea.ml:5221/s/0pU0">影像目录</a></li>
-								<li><a target="_blank" href="https://cloud.zeroarea.ml:5221/">个人目录</a></li>
+								<li><a id="detail" href="#detail">云·详</a></li>
+								<li><a id="share" target="_blank" href="https://cloud.zeroarea.ml:5221/s/Kdf2">共享目录</a></li>
+								<li><a id="film" target="_blank" href="https://cloud.zeroarea.ml:5221/s/0pU0">影像目录</a></li>
+								<li><a id="self" target="_blank" href="https://cloud.zeroarea.ml:5221/">个人目录</a></li>
+								<!--<li><a id="testbotton" href="javascript:;">测试按钮</a></li>-->
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -129,13 +130,15 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="https://cdn.bootcdn.net/ajax/libs/countup.js/1.9.3/countUp.js"></script>
+			<script src="assets/NZ-Plugin/Js/NZ-Drag.min.js"></script>
+			<script src="assets/NZ-Plugin/Js/NZ-MsgBox.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/bgchange.js"></script>
 			<script src="assets/particles.js"></script>
 			<script src="assets/app.js"></script>
 			<script src="assets/js/player.js"></script>
-			<!-- <script src="assets/js/alert.js"></script> -->
+			<script src="assets/js/tips.js"></script>
 			<!-- <script src="assets/js/sakura.js"></script> -->
 
 	</body>

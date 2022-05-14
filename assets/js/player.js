@@ -29,6 +29,7 @@ $(function () {
         playNextTrackButton = $('#play-next'),
         hideshowButton = $('#hide-show'),
         playershow = 0,
+        firsttime = 0,
         currIndex = -1;
 
     function playPause() {
@@ -41,6 +42,9 @@ $(function () {
                 i.attr('class', 'fa fa-pause');
                 playico.addClass('hideico');
                 audio.play();
+                if(!firsttime){
+                $.NZ_MsgBox.toast({ content: "当前播放：" + currTrackName + " - " + currAlbum, location: "top", showtime: 2500 });
+                firsttime = 1;}
             } else {
                 playerTrack.removeClass('active');
                 playerTrackbg.removeClass('active');
@@ -178,6 +182,7 @@ $(function () {
         buffInterval = setInterval(function () {
             if ((nTime == 0) || (bTime - nTime) > 1000) {
                 albumArt.addClass('buffering');
+                pauseico.addClass('hideico');
                 loadingico.removeClass('hideico');
             }
             else{
@@ -227,13 +232,15 @@ $(function () {
                     audio.play();
                     playerTrack.addClass('active');
                     albumArt.addClass('active');
-
+                    playico.addClass('hideico');
                     clearInterval(buffInterval);
                     checkBuffering();
                 }
 
                 albumName.text(currAlbum);
                 trackName.text(currTrackName);
+                if(firsttime)
+                    $.NZ_MsgBox.toast({ content: "当前播放：" + currTrackName + " - " + currAlbum, location: "top", showtime: 2500 });
                 albumArt.find('img.active').removeClass('active');
                 $('#album-pic').addClass('active');
 
@@ -258,6 +265,9 @@ $(function () {
         playPauseButton.on('click', playPause);
         playico.on('click',playPause);
         pauseico.on('click',playPause);
+        $("#yun").on('click', function () {
+            selectTrack2(1);
+        });
 
         firstplay();
 
@@ -298,8 +308,9 @@ $(function () {
             }
         });
     }
-
-    initPlayer();
+    
+    $window.on('load', initPlayer() );
+    
 });
 
 

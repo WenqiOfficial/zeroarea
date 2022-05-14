@@ -35,6 +35,7 @@ function testfun(){
         , tipsort: "bottom"
         , showtime: 2500
     });
+    $.NZ_MsgBox.toast({ content: "测试信息长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长", location: "top", showtime: 300000 });
 }
 
 function sayhi(){
@@ -52,7 +53,7 @@ function sayhi(){
     }else if(daytime<24){
         daytime = "天黑了...早点睡个好觉吧..."
     }
-    var toast = $.NZ_MsgBox.toast({ content: daytime, location: "top", showtime: 3000 });
+    $.NZ_MsgBox.toast({ content: daytime, location: "top", showtime: 3000 });
 }
 
 $.NZ_MsgBox.tooltip({
@@ -77,10 +78,4 @@ $.NZ_MsgBox.tooltip({
     tiptarget: $("#detail"),
     content: "关于这个地方...",
     location: "bottom"
-});
-
-$.NZ_MsgBox.tooltip({
-    tiptarget: $("#yun"),
-    content: "点这个可以切歌？！",
-    location: "right"
 });

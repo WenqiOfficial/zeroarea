@@ -29,7 +29,7 @@ $(function () {
         playNextTrackButton = $('#play-next'),
         hideshowButton = $('#hide-show'),
         playershow = 0,
-        firsttime = 0,
+        firstmessage = 0,
         currIndex = -1;
 
     function playPause() {
@@ -42,9 +42,7 @@ $(function () {
                 i.attr('class', 'fa fa-pause');
                 playico.addClass('hideico');
                 audio.play();
-                if(!firsttime){
-                $.NZ_MsgBox.toast({ content: "当前播放：" + currTrackName + " - " + currAlbum, location: "top", showtime: 2500 });
-                firsttime = 1;}
+                showmessage();
             } else {
                 playerTrack.removeClass('active');
                 playerTrackbg.removeClass('active');
@@ -67,6 +65,8 @@ $(function () {
                     playico.addClass('hideico');
                     i.attr('class', 'fa fa-pause');
                     pauseico.removeClass('hideico');
+                    showmessage();
+                    firstmessage = 1;
                 }
             }
         }, 300);
@@ -239,8 +239,7 @@ $(function () {
 
                 albumName.text(currAlbum);
                 trackName.text(currTrackName);
-                if(firsttime)
-                    $.NZ_MsgBox.toast({ content: "当前播放：" + currTrackName + " - " + currAlbum, location: "top", showtime: 2500 });
+                showmessage();
                 albumArt.find('img.active').removeClass('active');
                 $('#album-pic').addClass('active');
 
@@ -255,6 +254,12 @@ $(function () {
             }
         });
     }
+
+    function showmessage() {
+        if(!audio.paused)
+            $.NZ_MsgBox.toast({ content: "当前播放：" + currTrackName + " - " + currAlbum, location: "top", showtime: 2500 });
+    }
+
     function initPlayer() {
         audio = new Audio();
 

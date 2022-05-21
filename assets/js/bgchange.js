@@ -39,7 +39,7 @@ $(function () {
     function randompic () {
         //命运抉择之时(
         do {
-            max = 2 //范围（最大图片编号）
+            max = 6 //范围（最大图片编号）
             temp = Math.floor(Math.random()*(max+1));
         } while (temp == num);
         

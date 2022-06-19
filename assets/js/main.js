@@ -12,7 +12,8 @@
 		$header = $('#header'),
 		$footer = $('#footer'),
 		$main = $('#main'),
-		$main_articles = $main.children('article');
+		$main_articles = $main.children('article'),
+		$particles = $('#particles-js');
 
 	// Breakpoints.
 		breakpoints({
@@ -28,6 +29,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				$particles.removeClass('is-preload');
 			}, 100);
 		});
 

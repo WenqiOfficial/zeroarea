@@ -43,11 +43,11 @@ function sayhi(){
     if(daytime<6){
         daytime = "已经凌晨了！勤奋的你也要注意休息了哦";
     }else if(daytime<11){
-        daytime = "上午好哇！充满元气加油吧！";
+        daytime = "上午好！充满元气加油吧！";
     }else if(daytime<13){
         daytime = "中午好，吃完午饭小憩一下很不错哦";
     }else if(daytime<16){
-        daytime = "下午好，距离成功就差那么一点点啦！";
+        daytime = "下午好，要更加精神百倍";
     }else if(daytime<18){
         daytime = "傍晚时分~努力了一天辛苦啦";
     }else if(daytime<24){

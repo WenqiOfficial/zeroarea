@@ -64,7 +64,7 @@ $.NZ_MsgBox.tooltip({
 
 $.NZ_MsgBox.tooltip({
     tiptarget: $("#game"),
-    content: "电动组游戏资源直达车！————",
+    content: "电动组游戏资源直达车！——",
     location: "bottom"
 });
 

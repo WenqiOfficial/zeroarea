@@ -63,6 +63,12 @@ $.NZ_MsgBox.tooltip({
 });
 
 $.NZ_MsgBox.tooltip({
+    tiptarget: $("#game"),
+    content: "电动组游戏资源直达车！————",
+    location: "bottom"
+});
+
+$.NZ_MsgBox.tooltip({
     tiptarget: $("#film"),
     content: "零次元珍贵影像公开(bushi)",
     location: "bottom"

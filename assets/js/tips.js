@@ -18,10 +18,11 @@ function firsttips(){
         , showtime: 4000
     });
     $.NZ_MsgBox.tipsbar({
-        title: "国庆节快乐！"
-        , content: "🇨🇳祝祖国母亲生日快乐！🇨🇳"
+        title: "🇨🇳国庆节快乐！🇨🇳"
+        , content: "庆祝中华人民共和国成立73周年！"
         , type: "info"
-        , showtime: 4000
+        , tipsort: "bottom"
+        , showtime: 6000
     });
     if(date.getDay() == 6 && date.getHours() == 3 && date.getMinutes() <= 10)
         $.NZ_MsgBox.tipsbar({

@@ -30,6 +30,8 @@ $(function () {
     pic[6]="https://cloud.zeroarea.ml:5221/api/v3/file/get/964/pic07new.webp?sign=ew-wFvqpEGoJY43e6eyyOQs0t34khCCKbNFUYS--Lso%3D%3A0";
     picpid[6]= 88330224;
 
+    randompic();
+
     $window.on('load', function() {
         //切换间隔时间（毫秒）
         var timeInterval=12000; 

@@ -17,6 +17,13 @@ function firsttips(){
         , tipsort: "bottom"
         , showtime: 4000
     });
+    $.NZ_MsgBox.tipsbar({
+        title: "ヾ(•ω•`)o"
+        , content: "建议先阅读“云·详”！"
+        , type: "info"
+        , tipsort: "top"
+        , showtime: 10000
+    });
     if(date.getDay() == 6 && date.getHours() == 3 && date.getMinutes() <= 10)
         $.NZ_MsgBox.tipsbar({
             title: "哔哔哔！"
@@ -83,5 +90,11 @@ $.NZ_MsgBox.tooltip({
 $.NZ_MsgBox.tooltip({
     tiptarget: $("#detail"),
     content: "关于这个地方...",
+    location: "bottom"
+});
+
+$.NZ_MsgBox.tooltip({
+    tiptarget: $("#baidupan"),
+    content: "基于百度盘的另一个网盘哇！(由蘑菇提供)",
     location: "bottom"
 });

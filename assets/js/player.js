@@ -196,11 +196,11 @@ $(function () {
         }, 100);
     }
 
-    function httpTohttps(link) {
-        let reg = /^(https?:\/\/)([0-9a-z.]+)(:[0-9]+)?([/0-9a-z.]+)?(\?[0-9a-z&=]+)?(#[0-9-a-z]+)?/i
-        link = link.replace(reg, "https://$2$3$4$5$6");
-        return link      
-    }//转换http链接至https
+    // function httpTohttps(link) {
+    //     let reg = /^(https?:\/\/)([0-9a-z.]+)(:[0-9]+)?([/0-9a-z.]+)?(\?[0-9a-z&=]+)?(#[0-9-a-z]+)?/i
+    //     link = link.replace(reg, "https://$2$3$4$5$6");
+    //     return link      
+    // }//转换http链接至https
 
     function selectTrack2(flag) {
         /*
@@ -226,9 +226,11 @@ $(function () {
 
                 currAlbum = json.data.artistsname;
                 currTrackName = json.data.name;
-                currArtwork = httpTohttps(json.data.picurl);
+                currArtwork = json.data.picurl.replace(/^http:\/\//i,'https://');
+                // currArtwork = httpTohttps(json.data.picurl);
 
-                audio.src = httpTohttps(json.data.url);
+                audio.src = json.data.url.replace(/^http:\/\//i,'https://');
+                // audio.src = httpTohttps(json.data.url);
 
                 nTime = 0;
                 bTime = new Date();

@@ -1166,7 +1166,8 @@ html ::-webkit-scrollbar {
 			z-index: 2;
 		}
 		:root {
-			--imgurl: url("https://cloud.zeroarea.ml:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0");
+			/* --imgurl: url("https://cloud.zeroarea.ml:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0"); */
+			--imgurl: url("https://cdn.wenqi.ml:5244/d/gh/WenqiOfficial/wenqicdn/img/cover/mainimg4.webp");
 		}
 
 		.bg:after {

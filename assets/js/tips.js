@@ -24,6 +24,13 @@ function firsttips(){
         , tipsort: "top"
         , showtime: 10000
     });
+    $.NZ_MsgBox.tipsbar({
+        title: "哔哔哔！"
+        , content: "魔理沙偷走了云之间，目前无法访问！"
+        , type: "warning"
+        , tipsort: "bottom"
+        , showtime: 5000
+    });
     if(date.getDay() == 6 && date.getHours() == 3 && date.getMinutes() <= 10)
         $.NZ_MsgBox.tipsbar({
             title: "哔哔哔！"

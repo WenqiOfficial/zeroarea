@@ -1184,6 +1184,8 @@ html ::-webkit-scrollbar {
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
+		}
+		.bg.anion {
 			animation-name: bgmove;
 			animation-timing-function: cubic-bezier(8,12,10,12);
 			animation-duration: 12s;
@@ -1245,7 +1247,7 @@ html ::-webkit-scrollbar {
 	transition: all 2.5s ease-in-out;
 }
 #particles-js.is-preload {
-	opacity: 0%;
+	opacity: 0;
 }
 
 /* Wrapper */

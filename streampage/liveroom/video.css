@@ -1,7 +1,7 @@
 html,body {
-    width: 100%;
+    /* width: 100%; */
     /* height: 100%; */
-    background-color: #292929;
+    background-color: none;
 }
 * {
     padding: 0;
@@ -9,9 +9,9 @@ html,body {
 }
 /* 设置视频外部容器样式 */
 #videoContainer {
-    width: 60%;
+    width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
 }

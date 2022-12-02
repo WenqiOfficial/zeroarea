@@ -2,7 +2,7 @@ var botton = $("#testbotton"),
     $window = $(window),
     date = new Date(),
     shutdown = 0;
-$window.on('load', function() {
+    $window.on('load', function() {
     window.setTimeout(firsttips, 1000)
 });
 

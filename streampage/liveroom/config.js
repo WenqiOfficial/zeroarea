@@ -16,7 +16,7 @@
       if (r!=null) return r[2]; return '';
     }
     var videosrc = 'http://stream.wenqi.ml:8880/live/'+getString('room')+'.flv';
-    alert(videosrc);
+    // alert(videosrc);
     var source = new Super.VideoSource({
       // type: 视频类型 mp4:可播放浏览器支持的常见格式的视频文件(mp4/ogg/webm) m3u8: 可播放Hls形式推流直播视频(***.m3u8) flv: 可播放flv视频
       // src: 视频路径，可以是本地路径亦可是网络路径

@@ -7,7 +7,7 @@ function liveplay(id){
     setTimeout(function(){
         // alert("firstplay"+id);
         $('#wrapper').addClass('playing');
-        $('#l'+id).append("<p class='playerbox'><iframe class='liveplayer' width='100%' height='100%' scrolling='no' frameborder='0' frameborder src='liveroom/index.html?room="+liveroom[String.fromCharCode(id.charCodeAt()-17)]+"'></iframe></p>");
+        $('#l'+id).append("<p class='playerbox'><iframe allowfullscreen='allowfullscreen' mozallowfullscreen='mozallowfullscreen' msallowfullscreen='msallowfullscreen' oallowfullscreen='oallowfullscreen' webkitallowfullscreen='webkitallowfullscreen' class='liveplayer' width='100%' height='100%' scrolling='no' frameborder='0' frameborder src='liveroom/index-dplayer.html?room="+liveroom[String.fromCharCode(id.charCodeAt()-17)]+"'></iframe></p>");
     },100)
 }
 function livestop()

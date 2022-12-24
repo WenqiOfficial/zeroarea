@@ -2,25 +2,67 @@ var botton = $("#testbotton"),
     $window = $(window),
     date = new Date(),
     shutdown = 0;
-    $window.on('load', function() {
-    window.setTimeout(firsttips, 1000)
+
+$window.on('load', function() {
+    window.setTimeout(firsttips, 1000);
 });
 
-function firsttips() {
+function testserver(){
+//检测服务器是否正常
+var img = new Image();
+img.src = "https://stream.wenqi.ml:8881/favicon.ico";
+
+var timeout = setTimeout(function () {
+    img.onerror = img.onload = null;
+    console.log("server time out.");
+    canNotLoad();
+},3000);
+
+img.onerror = function () {
+    clearTimeout(timeout);
+    console.log("server load error.");
+    shutdown = 1;
+    canNotLoad();
+}
+
+img.onload = function () {
+    clearTimeout(timeout);
+    console.log("server ok.");
+    canLoad();
+}
+
+function canNotLoad() {
+    var msgtext="与服务器的连接超时！可能会加载失败！"
+    if(shutdown==1) msgtext="与服务器的连接错误！"
     $.NZ_MsgBox.tipsbar({
-        title: "ヾ(•ω•`)o",
-        content: "欸嘿",
-        type: "info",
-        tipsort: "top",
-        showtime: 3000
-    });
-    if(shutdown==1)$.NZ_MsgBox.tipsbar({
         title: "哔哔哔！",
-        content: "推流服务器已经关闭！",
+        content: msgtext,
         type: "warning",
-        tipsort: "bottom",
-        showtime: 5000
-    })
+        showtime: 5000,
+        processbar: false
+    });
+}
+function canLoad() {
+    $.NZ_MsgBox.tipsbar({ 
+        title: "ヾ(•ω•`)o"
+        , content: '与服务器的连接正常！'
+        , type: "success"
+        , showtime: 3000
+        , processbar: false
+    });
+}
+//
+}
+
+function firsttips() {
+    // $.NZ_MsgBox.tipsbar({
+    //     title: "ヾ(•ω•`)o",
+    //     content: "欸嘿",
+    //     type: "info",
+    //     tipsort: "top",
+    //     showtime: 3000
+    // });
+    testserver();
 }
 $.NZ_MsgBox.tooltip({
     tiptarget: $("#A"),

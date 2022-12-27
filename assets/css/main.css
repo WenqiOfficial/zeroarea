@@ -1187,7 +1187,8 @@ html ::-webkit-scrollbar {
 		}
 		.bg.anion {
 			animation-name: bgmove;
-			animation-timing-function: cubic-bezier(8,12,10,12);
+			/* animation-timing-function: cubic-bezier(8,12,10,12); */
+			animation-timing-function: ease;
 			animation-duration: 12s;
 			animation-direction: alternate;
 			animation-iteration-count: infinite;

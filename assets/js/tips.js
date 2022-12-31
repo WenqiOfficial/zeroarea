@@ -17,6 +17,14 @@ function firsttips() {
         processbar: false
     });
     $.NZ_MsgBox.tipsbar({
+        title: "新年快乐！！！",
+        content: "🎇🎇🎇🎇🎇🎇🎇🎇",
+        type: "info",
+        tipsort: "bottom",
+        showtime: 4000,
+        processbar: false
+    });
+    $.NZ_MsgBox.tipsbar({
         title: "ヾ(•ω•`)o",
         content: "建议先阅读“云·详”！",
         type: "info",

@@ -107,3 +107,8 @@ $.NZ_MsgBox.tooltip({
     content: "零次元公开推流(好评测试中)！",
     location: "bottom"
 });
+$.NZ_MsgBox.tooltip({
+    tiptarget: $("#bgm"),
+    content: "零次元动漫站：番次元！",
+    location: "bottom"
+});

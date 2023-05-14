@@ -1168,6 +1168,7 @@ html ::-webkit-scrollbar {
 		:root {
 			/* --imgurl: url("https://cloud.zeroarea.ml:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0"); */
 			--imgurl: url("https://cdn.wenqi.ml:5244/d/gh/WenqiOfficial/wenqicdn/img/cover/mainimg4.webp");
+			--nextimgurl: url("https://cdn.wenqi.ml:5244/d/gh/WenqiOfficial/wenqicdn/img/cover/mainimg5.webp");
 		}
 
 		.bg:after {
@@ -1185,14 +1186,14 @@ html ::-webkit-scrollbar {
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
-		.bg.anion {
-			animation-name: bgmove;
-			/* animation-timing-function: cubic-bezier(8,12,10,12); */
-			animation-timing-function: ease;
-			animation-duration: 12s;
-			animation-direction: alternate;
-			animation-iteration-count: infinite;
-			animation-fill-mode: both;
+		.bg.ani {
+			-moz-transition: -moz-transform 10s cubic-bezier(0.33, 0.07, 0.56, 0.98) 0.7s;
+			-webkit-transition: -webkit-transform 10s cubic-bezier(0.33, 0.07, 0.56, 0.98) 0.7s;
+			-ms-transition: -ms-transform 10s cubic-bezier(0.33, 0.07, 0.56, 0.98) 0.7s;
+			transition: transform 10s cubic-bezier(0.33, 0.07, 0.56, 0.98) 0.7s;
+		}
+		.bg.scaled {
+			transform: scale(1.12);
 		}
 
 		body.is-article-visible .bg:after, body.is-article-visible #bgbox {
@@ -1218,11 +1219,6 @@ html ::-webkit-scrollbar {
 			transition: background-color 0.75s ease-in-out;
 		}
 		
-		@keyframes bgmove {
-			0% {transform: scale(1);}
-			/* 10% {transform: scale(1);} */
-			100% {transform: scale(1.12);}
-		}
 		#bgbox {
 			top: 0;
 			left: 0;
@@ -1234,6 +1230,11 @@ html ::-webkit-scrollbar {
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			position: fixed;
 			z-index: -1;
+		}
+
+		#nextbg {
+			overflow: hidden;
+			background-image: var(--nextimgurl);
 		}
 		
 /* Pa */

@@ -112,3 +112,8 @@ $.NZ_MsgBox.tooltip({
     content: "零次元动漫站：番次元！",
     location: "bottom"
 });
+$.NZ_MsgBox.tooltip({
+    tiptarget: $("#bingai"),
+    content: "BingAI镜像站，不用爬墙和登录！",
+    location: "bottom"
+});

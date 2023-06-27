@@ -1,11 +1,10 @@
-var $window = $(window),
-    ori = $("#ori"),
+var ori = $("#ori"),
     cdf = $("#cdf"),
     cdn = $("#cdn");
 
-$window.on('load', function() {
-	window.setTimeout(testall, 1000);
-});
+
+setTimeout(testall, 1000);
+
 function testall(){
     testcdn()
     testori()
@@ -52,7 +51,7 @@ function testcdn() {
         .toggleClass('fa-angle-down')
         .toggleClass('fa-check');
         $('#cdn').removeClass('testing').addClass('good')
-        $('#cdnt').text(" 没问题啦!")
+        $('#cdnt').text(" 没问题!")
 	}
 }
 
@@ -96,7 +95,7 @@ function testori() {
         .toggleClass('fa-angle-down')
         .toggleClass('fa-check');
         $('#ori').removeClass('testing').addClass('good')
-        $('#orit').text(" 没问题啦!")
+        $('#orit').text(" 没问题!")
 	}
 }
 
@@ -140,6 +139,6 @@ function testcdf() {
         .toggleClass('fa-angle-down')
         .toggleClass('fa-check');
         $('#cdf').removeClass('testing').addClass('good')
-        $('#cdft').text(" 没问题啦!")
+        $('#cdft').text(" 没问题!")
 	}
 }

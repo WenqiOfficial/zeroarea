@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="main_circle.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="css/main.css" rel="stylesheet">
+		<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.1.0/css/all.css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.1.0/js/all.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="js/pages.js" ></script>
+		<script src="js/detect.js" ></script>
+		<title id="name">手机引导页</title> 
+		<script>
+			function subpages(ur)	{	
+            window.location.href=ur;
+                  }
+			function replacepages(ur)	{	
+            location.replace(ur);
+                  }
+			function newpages(ur)	{	
+            window.open(ur);
+                  }
+		</script>
+    </head>
+	
+	<body style="max-width:700px;margin:1% auto;">
+	    
+        <div class="caption" >
+        <p id="mainCap"><img src="bangumi.png" ></p>
+        <p id="mainSub">可用路线检测</p>
+		<h1 style="margin-top:30px"> </h1>
+		</div>
+			
+	<div class="cardGroup">
+			<p class="smallcaption"></p>
+			<br>
+	<div class="cardHoriSmall" onclick="newpages('https://bangumi.zeroarea.ml')">
+		<p class="headHori">站点1: Ori源 | <sta class="staut testing" id="ori"><i class="fas fa-circle-notch fa-spin"></i><tx id="orit"> 检测中</tx></sta></p>
+    </div>
+    <div class="cardHoriSmall" onclick="newpages('https://bgmc.zeroarea.ml')">
+		<p class="headHori">站点2: Cdf源 | <sta class="staut testing" id="cdf"><i class="fas fa-circle-notch fa-spin"></i><tx id="cdft"> 检测中</tx></sta></p>
+    </div>
+	<div class="cardHoriSmallnocllick">
+		<p class="headHori">CDN: 云之间 | <sta class="staut testing" id="cdn"><i class="fas fa-circle-notch fa-spin"></i><tx id="cdnt"> 检测中</tx></sta></p>
+    </div>
+            
+	</div>
+        
+	<p style="text-align:center;font-size:14px;margin:5% 0% 0% 0%">零次元 & 闻柒 | 2023</p>
+
+		
+	</body>
+
+	</html>

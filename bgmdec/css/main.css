@@ -1,0 +1,257 @@
+
+body{
+	/* background:#eeeeee url("main_nobg.png") ; */
+	background:#eeeeee;
+	background-attachment: fixed;
+	background-repeat:repeat;
+	margin: 5%;
+	font-family:shoujo;
+	}
+	
+ul {   
+	list-style-type: none;
+	margin:0% auto;
+	padding: 0;
+	overflow: hidden;
+	border-radius:8px;
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
+	display:table;
+}
+
+li{
+	display:table-cell;
+}
+
+
+
+.lis a {
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 8px 30px;
+	text-decoration: none;
+}
+
+.join{
+	color:#f38393;
+	text-decoration:none;
+	cursor:pointer;
+	text-align:center;
+	font-size:20px;
+}
+	
+
+
+.caption{
+	text-align: center;
+	margin-top: 50px;
+	}
+	@font-face {font-family:shoujo;src: url(shoujo.ttf);}
+	@font-face {font-family:shoujo;src: url(shoujo.woff);}
+
+	
+
+    #mainCap{
+        font-size:3.3em;
+        font-style: italic;
+
+    }
+    #mainSub{
+        font-size:1.42em;
+        letter-spacing: 0.2px;
+        /* font-style: italic; */
+        margin-top:-2.4em
+    }
+	
+.caption img{
+	text-align:center;
+	scale:60%;
+}
+
+.smallcaption{
+	padding-top:30px;
+	margin-bottom:5px;
+	font-size:26px;
+	color:#666666;
+	animation-name: anim;
+	animation-duration: 1s;
+}
+
+.staut{
+	transition: all ease 1.5s;
+}
+	
+.staut.testing{
+	color: #666666;
+}
+
+.staut.bad{
+	color: #EE0000;
+}
+
+.staut.good{
+	color: #39c588;
+}
+		
+.notice{
+	
+	height: auto;
+	max-width: 600px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius:8px;
+	display: inline-block;
+	margin:1% 10% 0 10%;
+	cursor:pointer;
+	transition-timing-function: ease;
+	transition:0.4s;
+	animation-name: anim;
+	animation-duration: 1s;
+}
+
+.noticeAbout{
+	
+	height: auto;
+	max-width: 600px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius:8px;
+	display: inline-block;
+	margin:1% 10% 0 10%;
+	animation-name: anim;
+	animation-duration: 1s;
+}
+
+
+.notice:hover{
+	transform:scale(1.07);
+	
+}
+
+.cardGroup{
+	text-align:center;	
+	
+}
+
+
+.cardHori {
+	height: 78px;
+	width: 300px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius:8px;
+	display: inline-block;
+	margin:7px;
+	cursor:pointer;
+	animation-name: anim;
+	animation-duration: 1s;
+	transition-timing-function: ease;
+	transition:0.3s;
+	
+	
+}
+
+
+
+@keyframes anim{
+	0%   {margin-top:300px;transform:scale(0);}
+	60%  {margin-top:10px;transform:scale(1.01);}
+}
+
+.cardHori:hover {
+	transform:scale(1.05);
+
+	}
+
+.cardHoriSmall {
+	height: 50px;
+	width: 300px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius:8px;
+	display: inline-block;
+	cursor:pointer;
+	margin:4px;
+	transition-timing-function: ease;
+	transition:0.3s;
+	animation-name: anim;
+	animation-duration: 1s;
+}
+.cardHoriSmall:hover{
+	height: 50px;
+	width: 320px;
+}
+
+
+.cardHoriimg img {
+	border-radius: 3px 0 0 3px;
+	float: left;
+	width: 22%;
+	height:22%;
+	margin:6px -15px 0 6px;
+	
+
+}
+
+
+.headHori{
+	display: block;
+	text-align:center;
+	font-size: 18px;
+	font-weight:Bold;
+	margin-top:12px;
+	color: #333333;
+	padding: 0 20px;
+}
+
+.headHoriHot{
+	position:absolute;
+	font-size: 14px;
+	background:red;
+	margin:8px 0 0 248px;
+	color: white;
+	border-radius: 4px;
+	padding: 2px 8px 2px 8px;
+}
+
+.headHoriNew{
+	position:absolute;
+	font-size: 14px;
+	margin:8px 0 0 248px;
+	background:rgb(61,220,132);
+	color: white;
+	border-radius: 4px;
+	padding: 1px 8px 2px 8px;
+}
+
+
+.contentHori{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #666666;
+	
+	margin-top:-11px;
+	width:290px;
+}
+
+.zoomIn{
+	 transition-timing-function: ease;
+	 transition:0.3s;
+}
+
+.zoomIn:hover{
+		 transform:scale(1.15);
+
+}
+
+
+
+
+
+
+
+
+
+		

@@ -58,7 +58,7 @@ function testcdn() {
 function testori() {
 	//检测服务器是否 没问题啦!
 	var img = new Image();
-	img.src = "https://bangumi.zeroarea.ml/imgs/bangumi.png";
+	img.src = "https://bangumi.zeroarea.ml/imgs/main_circle.svg";
 
 	var timeout = setTimeout(function() {
 		img.onerror = img.onload = null;

@@ -7,7 +7,7 @@ liveroom[3]='game3';
 
 function device(){
     var md = new MobileDetect(window.navigator.userAgent);
-    if(md.is('Safari') || md.is('iPhone') || md.is('iPad') || md.is('Macintosh'))
+    if(md.is('Safari') || md.is('iPhone') || md.is('iPad') || md.is('Mac OS'))
     {
         videotype='m3u8';
         $.NZ_MsgBox.tipsbar({

@@ -1,8 +1,25 @@
-var liveroom = new Array;
+var liveroom = new Array,
+    videotype='flv';
 liveroom[0]='livetest';
 liveroom[1]='game1';
 liveroom[2]='game2';
 liveroom[3]='game3';
+
+function device(){
+    var md = new MobileDetect(window.navigator.userAgent);
+    if(md.is('Safari') || md.is('iPhone') || md.is('iPad') || md.is('Mac'))
+    {
+        videotype='m3u8';
+        $.NZ_MsgBox.tipsbar({
+            title: "检测到非 FLV 支持设备",
+            content: "已自动切换到支持的 HLS 格式了！可能延时会较高呢！",
+            type: "info",
+            tipsort: "top",
+            showtime: 3000
+        });
+    }
+}
+
 function liveplay(id){
     // setTimeout(function(){
     //     // alert("firstplay"+id);
@@ -12,6 +29,7 @@ function liveplay(id){
     $('#l'+id).append("<div id='dplayer'></div>");
     creatplayer(liveroom[String.fromCharCode(id.charCodeAt()-17)]);
 }
+
 function livestop()
 {
     // if($('#wrapper').hasClass('playing')) {
@@ -21,6 +39,8 @@ function livestop()
         },500);
         // $('#wrapper').removeClass('playing');}
 }
+
+device();
 $('.close').on('click',livestop);
 // $('#wrapper').on('click',livestop);
 if(window.location.hash!=''){
@@ -47,8 +67,8 @@ function creatplayer(room){
             },
         },
         video: {
-            url: 'https://stream.wenqi.ml:48088/live/'+room+'.flv',
-            type: 'flv',
+            url: 'https://stream.wenqi.ml:48088/live/'+room+'.'+videotype,
+            type: videotype,
         },
     });
     dp.on('fullscreen', function(){fullscreen=1;});

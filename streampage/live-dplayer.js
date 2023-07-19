@@ -7,12 +7,12 @@ liveroom[3]='game3';
 
 function device(){
     var md = new MobileDetect(window.navigator.userAgent);
-    if(md.is('Safari') || md.is('iPhone') || md.is('iPad') || md.is('Mac'))
+    if(md.is('Safari') || md.is('iPhone') || md.is('iPad') || md.is('Macintosh'))
     {
         videotype='m3u8';
         $.NZ_MsgBox.tipsbar({
             title: "检测到非 FLV 支持设备",
-            content: "已自动切换到支持的 HLS 格式了！可能延时会较高呢！",
+            content: "已自动切换到 HLS 格式了！",
             type: "info",
             tipsort: "top",
             showtime: 3000

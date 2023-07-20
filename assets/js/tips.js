@@ -32,6 +32,11 @@ function firsttips() {
         showtime: 5000,
         processbar: false
     })
+    $.NZ_MsgBox.alert({ 
+        title: "注意注意！"
+        , content: "因 .ml 域名被无通知回收，现在零次元所有服务处于堪用状态，紧急抢修中！"
+        , type: "error"
+    });
 }
 
 function testfun() {

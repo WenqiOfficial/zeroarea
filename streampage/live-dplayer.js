@@ -68,7 +68,7 @@ function creatplayer(room){
             },
         },
         video: {
-            url: 'https://stream.wenqi.ml:48088/live/'+room+'.'+videotype,
+            url: 'https://stream.wenqi.icu:48088/live/'+room+'.'+videotype,
             type: videotype,
         },
     });

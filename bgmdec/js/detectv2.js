@@ -1,11 +1,11 @@
 setTimeout(testall, 1000);
 setTimeout
 function testall(){
-    NetPing("https://bgm.金之声.cn/","TX");
-	NetPing("https://bangumi.zeroarea.link/","CF");
+    NetPing("https://bgm.金之声.cn/","txc");
+	NetPing("https://bangumi.zeroarea.link/","cdf");
 	NetPing("https://cloud.wenqi.icu:5221/","cdn");
-	NetPing("https://cloud.zeroarea.link/","cfcdn");
-	NetPing("https://my.zeroarea.link/","mg");
+	NetPing("https://cloud.zeroarea.link/","cdfcdn");
+	NetPing("https://my.zeroarea.link/","mgc");
 }
 
 function statuchange(name,statu) {

@@ -32,14 +32,6 @@ function firsttips() {
         showtime: 5000,
         processbar: false
     })
-    $.NZ_MsgBox.tipsbar({
-        title: "哔哔哔！",
-        content: "番次元尚在抢修中...",
-        type: "warning",
-        tipsort: "bottom",
-        showtime: 5000,
-        processbar: false
-    })
 }
 
 function testfun() {

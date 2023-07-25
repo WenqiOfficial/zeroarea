@@ -10,7 +10,7 @@ $window.on('load', function() {
 function testserver(){
 //检测服务器是否正常
 var img = new Image();
-img.src = "https://stream.wenqi.ml:48088/favicon.ico";
+img.src = "https://stream.wenqi.icu:48088/favicon.ico";
 
 var timeout = setTimeout(function () {
     img.onerror = img.onload = null;

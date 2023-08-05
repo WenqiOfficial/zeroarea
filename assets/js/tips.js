@@ -117,3 +117,8 @@ $.NZ_MsgBox.tooltip({
     content: "BingAI镜像站，不用爬墙和登录！",
     location: "bottom"
 });
+$.NZ_MsgBox.tooltip({
+    tiptarget: $("#quiz"),
+    content: "开门大吉！(东方版)",
+    location: "bottom"
+});

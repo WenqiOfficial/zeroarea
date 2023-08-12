@@ -1,5 +1,5 @@
 setTimeout(testall, 1000);
-setTimeout
+//setTimeout
 function testall(){
     NetPing("https://bgm.金之声.cn/","txc");
 	NetPing("https://bangumi.zeroarea.link/","cdf");
@@ -31,11 +31,11 @@ function statuchange(name,statu) {
 	
 }
 
-function NetPing(pingUrl,name) {
+async function NetPing(pingUrl,name) {
 	$.ajax({
 		url:pingUrl,
 		type:"get",
-		async:false,
+		async:true,
 		dataType: "jsonp", 
 		success:function(){
 			ress= 1;

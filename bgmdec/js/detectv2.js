@@ -1,7 +1,7 @@
 setTimeout(testall, 1000);
 //setTimeout
 function testall(){
-    NetPing("https://bgm.金之声.cn/","txc");
+    // NetPing("https://bgm.金之声.cn/","txc");
 	NetPing("https://bangumi.zeroarea.link/","cdf");
 	NetPing("https://cloud.wenqi.icu:5221/","cdn");
 	NetPing("https://cloud.zeroarea.link/","cdfcdn");

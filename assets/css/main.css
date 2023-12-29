@@ -91,6 +91,39 @@ html ::-webkit-scrollbar {
 	scrollbar-width: thin !important;
   }
 
+/* Blocker */
+#blocker {
+    /* display: block; */
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+	color: rgba(255, 255, 255, 0);
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#blocker.display {
+	color: rgba(255, 255, 255, 1) !important;
+}
+#blocker.is-preload {
+	display: block !important ;
+}
+#blocker p{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 /* Basic */
 
 	@-ms-viewport {

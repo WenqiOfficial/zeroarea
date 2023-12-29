@@ -93,13 +93,12 @@ html ::-webkit-scrollbar {
 
 /* Blocker */
 #blocker {
-    /* display: block; */
-    z-index: 900;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
+	z-index: 900;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
 	color: rgba(255, 255, 255, 0);
 	-moz-transition: color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out;
@@ -118,10 +117,10 @@ html ::-webkit-scrollbar {
 }
 #blocker p{
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
 }
 
 /* Basic */

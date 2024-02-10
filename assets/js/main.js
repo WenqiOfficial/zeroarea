@@ -1,1 +1,181 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(3($){m e=$(Y),$4=$(\'4\'),$E=$(\'#E\'),$G=$(\'#G\'),$w=$(\'#w\'),$y=$(\'#y\'),$6=$(\'#6\'),$s=$6.Z(\'o\'),$P=$(\'#P-1e\');1f({1g:[\'1h\',\'1i\'],1j:[\'1k\',\'1l\'],1m:[\'1n\',\'1o\'],1p:[\'1q\',\'1r\'],1s:[\'1t\',\'1u\'],1v:[Q,\'1w\']});e.k(\'10\',3(){Y.8(3(){$4.9(\'5-R\');$G.9(\'1x\');8(3(){$G.9(\'5-R\')},1y);$P.9(\'5-R\')},1z)});7(1A.1B==\'1C\'){m f;e.k(\'z.A-B\',3(){1D(f);f=8(3(){7($E.1E(\'1F\')>e.S())$E.11(\'S\',\'1G\');H $E.11(\'S\',\'1H\')},1I)}).F(\'z.A-B\')}m g=$w.Z(\'1J\'),$I=g.1K(\'1L\');7($I.J%2==0){g.p(\'1M-12\');$I.1N(($I.J/2)).p(\'5-12\')}m h=1O,l=C;$6.T=3(a,b){m c=$s.K(\'#\'+a);7(c.J==0)L;7(l||(13 b!=\'14\'&&b===x)){$4.p(\'5-M\');$4.p(\'5-o-t\');$s.9(\'q\');$w.j();$y.j();$6.r();c.r();c.p(\'q\');l=C;8(3(){$4.9(\'5-M\')},(b?1P:0));L}l=x;7($4.N(\'5-o-t\')){m d=$s.K(\'.q\');d.9(\'q\');8(3(){d.j();c.r();8(3(){c.p(\'q\');e.D(0).F(\'z.A-B\');8(3(){l=C},h)},25)},h)}H{$4.p(\'5-o-t\');8(3(){$w.j();$y.j();$6.r();c.r();8(3(){c.p(\'q\');e.D(0).F(\'z.A-B\');8(3(){l=C},h)},25)},h)}};$6.O=3(a){m b=$s.K(\'.q\');7(!$4.N(\'5-o-t\'))L;7(13 a!=\'14\'&&a===x)U.1Q(Q,Q,\'#\');7(l){$4.p(\'5-M\');b.9(\'q\');b.j();$6.j();$y.r();$w.r();$4.9(\'5-o-t\');l=C;$4.9(\'5-M\');e.D(0).F(\'z.A-B\');L}l=x;b.9(\'q\');8(3(){b.j();$6.j();$y.r();$w.r();8(3(){$4.9(\'5-o-t\');e.D(0).F(\'z.A-B\');8(3(){l=C},h)},25)},h)};$s.1R(3(){m b=$(1S);$(\'<15 1T="1U">1V</15>\').1W(b).k(\'V\',3(){u.v=\'\'});b.k(\'V\',3(a){a.W()})});$4.k(\'V\',3(a){7($4.N(\'5-o-t\'))$6.O(x)});e.k(\'1X\',3(a){1Y(a.1Z){20 27:7($4.N(\'5-o-t\'))$6.O(x);16;21:16}});e.k(\'17\',3(a){7(u.v==\'\'||u.v==\'#\'){a.18();a.W();$6.O()}H 7($s.K(u.v).J>0){a.18();a.W();$6.T(u.v.19(1))}});7(\'1a\'22 U)U.1a=\'23\';H{m i=0,X=0,$1b=$(\'24,4\');e.k(\'26\',3(){i=X;X=$1b.D()}).k(\'17\',3(){e.D(i)})}$6.j();$s.j();7(u.v!=\'\'&&u.v!=\'#\')e.k(\'10\',3(){$6.T(u.v.19(1),x)})})(28);1c.1d("\\n\\n███████╗███████╗██████╗  ██████╗  █████╗ ██████╗ ███████╗ █████╗ \\n╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗\\n  ███╔╝ █████╗  ██████╔╝██║   ██║███████║██████╔╝█████╗  ███████║\\n ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██╔══██║██╔══██╗██╔══╝  ██╔══██║\\n███████╗███████╗██║  ██║╚██████╔╝██║  ██║██║  ██║███████╗██║  ██║\\n╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\\n\\n------------------------------------------------ 29|零次元动漫社");1c.1d(\'%c 唷！ %c\',\'2a:#2b; 2c:#2d\',\'\',\'你在干什么呢~(/ω•＼*)\');',62,138,'|||function|body|is|main|if|setTimeout|removeClass||||||||||hide|on|locked|var||article|addClass|active|show|main_articles|visible|location|hash|header|true|footer|resize|flexbox|fix|false|scrollTop|wrapper|triggerHandler|blocker|else|nav_li|length|filter|return|switching|hasClass|_hide|particles|null|preload|height|_show|history|click|stopPropagation|scrollPos|window|children|load|css|middle|typeof|undefined|div|break|hashchange|preventDefault|substr|scrollRestoration|htmlbody|console|log|js|breakpoints|xlarge|1281px|1680px|large|981px|1280px|medium|737px|980px|small|481px|736px|xsmall|361px|480px|xxsmall|360px|display|500|100|browser|name|ie|clearTimeout|prop|scrollHeight|auto|100vh|250|nav|find|li|use|eq|325|1000|pushState|each|this|class|close|Close|appendTo|keyup|switch|keyCode|case|default|in|manual|html||scroll||jQuery|2024|background|24272A|color|ffffff'.split('|'),0,{}))
+(function($) {
+    var e = $(window),
+        $body = $('body'),
+        $wrapper = $('#wrapper'),
+        $blocker = $('#blocker'),
+        $header = $('#header'),
+        $footer = $('#footer'),
+        $main = $('#main'),
+        $main_articles = $main.children('article'),
+        $particles = $('#particles-js');
+    breakpoints({
+        xlarge: ['1281px', '1680px'],
+        large: ['981px', '1280px'],
+        medium: ['737px', '980px'],
+        small: ['481px', '736px'],
+        xsmall: ['361px', '480px'],
+        xxsmall: [null, '360px']
+    });
+    e.on('load', function() {
+        window.setTimeout(function() {
+            $body.removeClass('is-preload');
+            $blocker.removeClass('display');
+            setTimeout(function() {
+                $blocker.removeClass('is-preload')
+            }, 500);
+            $particles.removeClass('is-preload')
+        }, 100)
+    });
+    if (browser.name == 'ie') {
+        var f;
+        e.on('resize.flexbox-fix', function() {
+            clearTimeout(f);
+            f = setTimeout(function() {
+                if ($wrapper.prop('scrollHeight') > e.height()) $wrapper.css('height', 'auto');
+                else $wrapper.css('height', '100vh')
+            }, 250)
+        }).triggerHandler('resize.flexbox-fix')
+    }
+    var g = $header.children('nav'),
+        $nav_li = g.find('li');
+    if ($nav_li.length % 2 == 0) {
+        g.addClass('use-middle');
+        $nav_li.eq(($nav_li.length / 2)).addClass('is-middle')
+    }
+    var h = 325,
+        locked = false;
+    $main._show = function(a, b) {
+        var c = $main_articles.filter('#' + a);
+        if (c.length == 0) return;
+        if (locked || (typeof b != 'undefined' && b === true)) {
+            $body.addClass('is-switching');
+            $body.addClass('is-article-visible');
+            $main_articles.removeClass('active');
+            $header.hide();
+            $footer.hide();
+            $main.show();
+            c.show();
+            c.addClass('active');
+            locked = false;
+            setTimeout(function() {
+                $body.removeClass('is-switching')
+            }, (b ? 1000 : 0));
+            return
+        }
+        locked = true;
+        if ($body.hasClass('is-article-visible')) {
+            var d = $main_articles.filter('.active');
+            d.removeClass('active');
+            setTimeout(function() {
+                d.hide();
+                c.show();
+                setTimeout(function() {
+                    c.addClass('active');
+                    e.scrollTop(0).triggerHandler('resize.flexbox-fix');
+                    setTimeout(function() {
+                        locked = false
+                    }, h)
+                }, 25)
+            }, h)
+        } else {
+            $body.addClass('is-article-visible');
+            setTimeout(function() {
+                $header.hide();
+                $footer.hide();
+                $main.show();
+                c.show();
+                setTimeout(function() {
+                    c.addClass('active');
+                    e.scrollTop(0).triggerHandler('resize.flexbox-fix');
+                    setTimeout(function() {
+                        locked = false
+                    }, h)
+                }, 25)
+            }, h)
+        }
+    };
+    $main._hide = function(a) {
+        var b = $main_articles.filter('.active');
+        if (!$body.hasClass('is-article-visible')) return;
+        if (typeof a != 'undefined' && a === true) history.pushState(null, null, '#');
+        if (locked) {
+            $body.addClass('is-switching');
+            b.removeClass('active');
+            b.hide();
+            $main.hide();
+            $footer.show();
+            $header.show();
+            $body.removeClass('is-article-visible');
+            locked = false;
+            $body.removeClass('is-switching');
+            e.scrollTop(0).triggerHandler('resize.flexbox-fix');
+            return
+        }
+        locked = true;
+        b.removeClass('active');
+        setTimeout(function() {
+            b.hide();
+            $main.hide();
+            $footer.show();
+            $header.show();
+            setTimeout(function() {
+                $body.removeClass('is-article-visible');
+                e.scrollTop(0).triggerHandler('resize.flexbox-fix');
+                setTimeout(function() {
+                    locked = false
+                }, h)
+            }, 25)
+        }, h)
+    };
+    $main_articles.each(function() {
+        var b = $(this);
+        $('<div class="close">Close</div>').appendTo(b).on('click', function() {
+            location.hash = ''
+        });
+        b.on('click', function(a) {
+            a.stopPropagation()
+        })
+    });
+    $body.on('click', function(a) {
+        if ($body.hasClass('is-article-visible')) $main._hide(true)
+    });
+    e.on('keyup', function(a) {
+        switch (a.keyCode) {
+            case 27:
+                if ($body.hasClass('is-article-visible')) $main._hide(true);
+                break;
+            default:
+                break
+        }
+    });
+    e.on('hashchange', function(a) {
+        if (location.hash == '' || location.hash == '#') {
+            a.preventDefault();
+            a.stopPropagation();
+            $main._hide()
+        } else if ($main_articles.filter(location.hash).length > 0) {
+            a.preventDefault();
+            a.stopPropagation();
+            $main._show(location.hash.substr(1))
+        }
+    });
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    else {
+        var i = 0,
+            scrollPos = 0,
+            $htmlbody = $('html,body');
+        e.on('scroll', function() {
+            i = scrollPos;
+            scrollPos = $htmlbody.scrollTop()
+        }).on('hashchange', function() {
+            e.scrollTop(i)
+        })
+    }
+    $main.hide();
+    $main_articles.hide();
+    if (location.hash != '' && location.hash != '#') e.on('load', function() {
+        $main._show(location.hash.substr(1), true)
+    })
+})(jQuery);
+console.log("\n\n███████╗███████╗██████╗  ██████╗  █████╗ ██████╗ ███████╗ █████╗ \n╚══███╔╝██╔════╝██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗\n  ███╔╝ █████╗  ██████╔╝██║   ██║███████║██████╔╝█████╗  ███████║\n ███╔╝  ██╔══╝  ██╔══██╗██║   ██║██╔══██║██╔══██╗██╔══╝  ██╔══██║\n███████╗███████╗██║  ██║╚██████╔╝██║  ██║██║  ██║███████╗██║  ██║\n╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\n\n------------------------------------------------ 2024|零次元动漫社");
+console.log('%c 唷！ %c', 'background:#24272A; color:#ffffff', '', '你在干什么呢~(/ω•＼*)');

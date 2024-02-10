@@ -1,1 +1,110 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('u(\'h-v\',{"h":{"w":{"9":x,"y":{"7":6,"z":A}},"d":{"9":"#i"},"B":{"C":"D","E":{"e":0,"d":"#F"},"G":{"H":5},"I":{"J":"K/L.M","e":f,"N":f}},"a":{"9":1,"g":6,"j":{"7":6,"b":1,"O":0,"k":8}},"l":{"9":3,"g":6,"j":{"7":8,"b":4,"P":0.3,"k":8}},"m":{"7":8,"c":Q,"d":"#i","a":0.4,"e":1},"R":{"7":6,"b":1,"S":"T","g":6,"U":8,"V":"W","X":8,"Y":{"7":8,"Z":n,"10":n}}},"11":{"12":"13","14":{"15":{"7":6,"o":"p"},"16":{"7":8,"o":"q"},"17":6},"18":{"19":{"c":r,"m":{"a":1}},"p":{"c":f,"l":0,"s":2,"a":0,"b":3},"q":{"c":r,"s":0.4},"1a":{"t":4},"1b":{"t":2}}},"1c":6});',62,75,'||||||true|enable|false|value|opacity|speed|distance|color|width|100|random|particles|ffffff|anim|sync|size|line_linked|600|mode|bubble|repulse|400|duration|particles_nb|particlesJS|js|number|160|density|value_area|800|shape|type|circle|stroke|000000|polygon|nb_sides|image|src|img|github|svg|height|opacity_min|size_min|150|move|direction|none|straight|out_mode|out|bounce|attract|rotateX|rotateY|interactivity|detect_on|canvas|events|onhover|onclick|resize|modes|grab|push|remove|retina_detect'.split('|'),0,{}))
+particlesJS('particles-js', {
+    "particles": {
+        "number": {
+            "value": 160,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 1,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 4,
+                "size_min": 0.3,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": false,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 1,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 600
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "bubble"
+            },
+            "onclick": {
+                "enable": false,
+                "mode": "repulse"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 100,
+                "size": 0,
+                "duration": 2,
+                "opacity": 0,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 400,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});

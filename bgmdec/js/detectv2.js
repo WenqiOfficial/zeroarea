@@ -39,16 +39,13 @@ async function NetPing(pingUrl,name) {
 		dataType: "jsonp", 
 		success:function(){
 			ress= 1;
-			console.log('ajaxress'+ress);
+			console.log('ajax ress='+ress);
 			statuchange(name,ress);
 		 },
-	  	statusCode:{
-		404:function(){
-		 ress= 0;console.log('ajax ress fail='+ress);statuchange(name,ress);
-		},
-		200:function(){
-		 ress= 1;console.log('ajax ress success='+ress);statuchange(name,ress);
+	  	error: function(){
+			ress= 0;
+			console.log('ajax ress fail='+ress);
+			statuchange(name,ress);
 		}
-	  	}
 	});
 }

@@ -36,7 +36,7 @@ async function NetPing(pingUrl,name) {
 		url:pingUrl,
 		type:"get",
 		async:true,
-		dataType: "jsonp", 
+		dataType: "json", 
 		success:function(){
 			ress= 1;
 			console.log('ajax ress='+ress);

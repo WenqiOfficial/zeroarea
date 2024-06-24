@@ -41,6 +41,8 @@ $(function() {
     picpid[10] = 89890583;
     pic[11] = "https://cloud.wenqi.icu:5221/api/v3/file/get/5990/pic12new.webp?sign=Qn5gXpcX_ekt1PLZViZO2PS6tmy6W7mqX0hSZnfC1hw%3D%3A0";
     picpid[11] = 73424731;
+    pic[12] = "https://cloud.wenqi.icu:5221/api/v3/file/get/16356/pic13new.webp?sign=NTR2IbaTbCOofyf5jIcIdVbHQAUixJc4MpZBzgPQRyE%3D%3A0";
+    picpid[12] = 96910253;
 
 
     nextpicnum = randompic();//第一次预选
@@ -68,7 +70,7 @@ $(function() {
     function randompic() {
         var randomtemp;//随机选择的picnum
         do {
-            max = 11;
+            max = 12;
             randomtemp = Math.floor(Math.random() * (max + 1));
         } while (randomtemp == picnum);
         return randomtemp;

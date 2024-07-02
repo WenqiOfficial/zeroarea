@@ -10,7 +10,7 @@ function testall(){
 	NetPing2("https://bangumi.zeroarea.link/imgs/bangumi.png","cdf");
 	NetPing2("https://cloud.wenqi.icu:5221/api/v3/file/get/549/main_circle.svg?sign=rpVtKXXBOlFr1AbPcKvxAujbD2yTl6_U6y-HR7GBPiU%3D%3A0","cdn");
 	NetPing2("https://cloud.zeroarea.link/api/v3/file/get/549/main_circle.svg?sign=rpVtKXXBOlFr1AbPcKvxAujbD2yTl6_U6y-HR7GBPiU%3D%3A0","cdfcdn");
-	// NetPing2("https://my.zeroarea.link/","mgc");
+	NetPing2("https://bangumi.zeroarea.link/imgs/bangumi.png","mgc");
 }
 
 function statuchange(name,statu) {

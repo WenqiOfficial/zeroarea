@@ -56,7 +56,7 @@ async function NetPing(pingUrl,name) {
 	});
 }
 
-function NetPing2(pingUrl,name){
+async function NetPing2(pingUrl,name){
 	//检测服务器是否正常
 	var img = new Image();
 	img.src = pingUrl;
@@ -65,7 +65,7 @@ function NetPing2(pingUrl,name){
 		img.onerror = img.onload = null;
 		console.log(name+" server time out.");
 		canNotLoad();
-	},3000);
+	},10000);
 	
 	img.onerror = function () {
 		clearTimeout(timeout);

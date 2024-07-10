@@ -8,7 +8,7 @@ function firsttips() {
 		processbar: !1
 	}), $.NZ_MsgBox.tipsbar({
 		title: "Attention！",
-		content: "zeroarea.link域名即将到期，现已转移至新域名，请留意！",
+		content: "新域名为: zeroarea.top ！",
 		type: "warning",
 		tipsort: "top",
 		showtime: 1e4,

@@ -1,7 +1,12 @@
 /* @import url(fontawesome-all.min.css); */
 @import url(https://cdnjs.snrat.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url("https://fonts.googlefonts.cn/css?family=Source+Sans+Pro:300italic,600italic,300,600");
-
+@media (prefers-color-scheme: dark) 
+{
+    body {
+        background-color: #111;
+    }
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,

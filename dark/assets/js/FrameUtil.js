@@ -1,1 +1,48 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(4(){3 d=0,o=p,5=q,8=0;$6.r(\'s\',4(){9()});3 e=4(){t(6.u||6.v||4(a){6.w(a,7/p)})}();3 f=0;3 g=0;3 h=j.k();3 i=j.k();4 9(){3 a=j.k();3 b=(a-i);3 c=l.m(7/b);i=a;g++;f++;n(a>7+h){3 c=l.m((f*7)/(a-h));f=0;h=a;d++;5=l.m((5+c)/2);n(d%x==0&&5<=q&&d>1&&$(\'#y\').z(\'A\')&&8==0){$(\'.B\').C();8=1;$.D.E({F:"检测到帧率过低！",G:"已自动关闭动画效果，可在页面底部开关重新开启",H:"I"})}};n(d<o)e(9)}});',45,45,'|||var|function|avgfps|window|1000|alerttime|loop||||||||||Date|now|Math|round|if|totaltimes|60|24|on|load|return|requestAnimationFrame|webkitRequestAnimationFrame|setTimeout|10|bg|hasClass|ani|aniswitch|click|NZ_MsgBox|alert|title|content|type|warning'.split('|'),0,{}))
+/* Frame Improve */
+/* 2024.02.10    */
+/* WenqiOfficial */
+$(function() {
+    var d = 0,
+        totaltimes = 60,
+        avgfps = 24,
+        alerttime = 0,
+        alertloop = 4;
+    $window.on('load', function() {
+        loop()
+    });
+    var e = function() {
+        return (window.requestAnimationFrame || window.webkitRequestAnimationFrame || function(a) {
+            window.setTimeout(a, 1000 / 60)
+        })
+    }();
+    var f = 0;
+    var g = 0;
+    var h = Date.now();
+    var i = Date.now();
+
+    function loop() {
+        var a = Date.now();
+        var b = (a - i);
+        var c = Math.round(1000 / b);
+        i = a;
+        g++;
+        f++;
+        if (a > 1000 + h) {
+            var c = Math.round((f * 1000) / (a - h));
+            f = 0;
+            h = a;
+            d++;
+            avgfps = Math.round((avgfps + c) / 2);
+            if (d % alertloop == 0 && avgfps <= 24 && d > 1 && $('#bg').hasClass('ani') && alerttime == 0) {
+                $('.aniswitch').click();
+                alerttime = 1;
+                $.NZ_MsgBox.alert({
+                    title: "检测到帧率过低！",
+                    content: "已自动关闭动画效果，可在页面底部开关重新开启",
+                    type: "warning"
+                })
+            }
+        };
+        if (d < totaltimes) e(loop)
+    }
+});

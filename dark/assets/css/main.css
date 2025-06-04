@@ -2,7 +2,6 @@
 @import url(https://cdnjs.snrat.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url("https://fonts.googlefonts.cn/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -90,6 +89,38 @@ html ::-webkit-scrollbar {
 	scrollbar-color: #aaa transparent;
 	scrollbar-width: thin !important;
   }
+
+/* Blocker */
+#blocker {
+	z-index: 900;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+	color: rgba(255, 255, 255, 0);
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#blocker.display {
+	color: rgba(255, 255, 255, 1) !important;
+}
+#blocker.is-preload {
+	display: block !important ;
+}
+#blocker p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
 
 /* Basic */
 
@@ -1169,6 +1200,7 @@ html ::-webkit-scrollbar {
 		:root {
 			/* --imgurl: url("https://cloud.wenqi.icu:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0"); */
 			--imgurl: url("https://cdn.wenqi.icu:5244/d/gh/WenqiOfficial/wenqicdn/img/cover/mainimg4.webp");
+			/* --imgurl: url("../../images/offline.png"); */
 			/* --nextimgurl: url("https://cdn.wenqi.icu:5244/d/gh/WenqiOfficial/wenqicdn/img/cover/mainimg5.webp"); */
 			--nextimgurl: url("");
 		}

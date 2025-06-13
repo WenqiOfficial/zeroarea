@@ -99,4 +99,8 @@ botton.on("click", testfun), $window.on("load", function() {
 	tiptarget: $("#quiz"),
 	content: "开门大吉！(东方版)",
 	location: "bottom"
+}), $.NZ_MsgBox.tooltip({
+	tiptarget: $("#lain"),
+	content: "Lain的世界",
+	location: "bottom"
 });

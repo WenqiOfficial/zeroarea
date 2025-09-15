@@ -1166,7 +1166,7 @@ html ::-webkit-scrollbar {
 			z-index: 2;
 		}
 		:root {
-			/* --imgurl: url("https://cloud.zeroarea.ml:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0"); */
+			--imgurl: url("https://raw.hubproxy.wenqi.icu/WenqiOfficial/wenqicdn/master/img/cover/mainimg7.webp");
 			/* --imgurl: url("https://cdn.wenqi.icu:5244/d/gh/WenqiOfficial/wenqicdn/img/banner/112_53727427_p0.webp"); */
 		}
 

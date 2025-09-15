@@ -1,1 +1,80 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(9(){z r=S.T(\':U\'),c=$("#c"),t="开启",d=0,u=0,A,x,8=y E(),7=y E();8[0]="e://f.g.h:i/j/k/l/m/V/W.n?o=X=:0";7[0]=Y;8[1]="e://f.g.h:i/j/k/l/m/Z/10.n?o=11-12-13%p%q";7[1]=14;8[2]="e://f.g.h:i/j/k/l/m/15/16.n?o=-17-18%p%q";7[2]=19;8[3]="e://f.g.h:i/j/k/l/m/1a/1b.n?o=1c%p%q";7[3]=1d;8[4]="e://f.g.h:i/j/k/l/m/1e/1f.n?o=1g%p%q";7[4]=1h;8[5]="e://f.g.h:i/j/k/l/m/1i/1j.n?o=1k%p%q";7[5]=1l;8[6]="e://f.g.h:i/j/k/l/m/1m/1n.n?o=1o-1p--1q%p%q";7[6]=1r;B();$1s.F(\'1t\',9(){z a=1u;1v(B,a)});9 B(){1w{A=6;x=G.1x(G.1y()*(A+1))}1z(x==d);d=x;c.v(\'s\');C(9(){r.1A.1B(\'--1C\',\'1D(\'+8[d]+\')\');c.w(\'s\');H()},D)}z b={1E:1F,1G:1H};y I("J",u,7[d],0,2,b).K();u=7[d];9 H(){y I("J",u,7[d],0,2,b).K();u=7[d]}$(\'.1I\').F(\'1J\',L);9 L(){1K(t=="开启"){c.v(\'s\');C(9(){$(\'#M-N\').v(\'O-P\');$(\'.Q\').w(\'R\');c.w(\'s\')},D);t="关闭"}1L{c.v(\'s\');C(9(){$(\'.Q\').v(\'R\');$(\'#M-N\').w(\'O-P\');c.w(\'s\')},D);t="开启"}$.1M.1N({1O:"动画效果已"+t,1P:"1Q",1R:1S})}});',62,117,'|||||||picpid|pic|function|||bgbox|num|https|cloud|zeroarea|ml|5221|api|v3|file|get|webp|sign|3D|3A0||black|ani|nowpid|addClass|removeClass|temp|new|var|max|randompic|setTimeout|1000|Array|on|Math|changepid|CountUp|pid|start|aniswitcher|particles|js|is|preload|bg|anion|document|querySelector|root|407|pic02new|oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8|79776133|552|pic01new|B1iWbDd580RSTiBS23D1QNsEc|fIvUbFVOvCEhUo|yc|83508760|553|pic03new|6tPKe7D5bo6Q4FA4q|if_mTwdDbJPvbo8Q7J1mnoIc|76685776|957|pic04new|y9Ue5XevB2gCYf1JNH_8tbO3lcX3BnDJ4eCaURRHqZg|75778903|966|pic05new|4l0xy5xmC9138kN7Y1jXvlyjgru6RuaGfmxpuJtyY1Q|51698567|962|pic06new|TG858chNCBA_RPFrGm29XgY_4JtljZHobSUyVHBzhwA|34844544|964|pic07new|ew|wFvqpEGoJY43e6eyyOQs0t34khCCKbNFUYS|Lso|88330224|window|load|12000|setInterval|do|floor|random|while|style|setProperty|imgurl|url|useEasing|true|useGrouping|false|aniswitch|click|if|else|NZ_MsgBox|toast|content|location|top|showtime|2500'.split('|'),0,{}))
+$(function() {
+    var r = document.querySelector(':root'),
+        bgbox = $("#bgbox"),
+        ani = "开启",
+        num = 0,
+        nowpid = 0,
+        max, temp, pic = new Array(),
+        picpid = new Array();
+    // pic[0] = "https://cloud.zeroarea.ml:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0";
+    pic[0] = "https://raw.hubproxy.wenqi.icu/WenqiOfficial/wenqicdn/master/img/cover/mainimg7.webp";
+    picpid[0] = 79776133;
+    // pic[1] = "https://cloud.zeroarea.ml:5221/api/v3/file/get/552/pic01new.webp?sign=B1iWbDd580RSTiBS23D1QNsEc-fIvUbFVOvCEhUo-yc%3D%3A0";
+    // picpid[1] = 83508760;
+    // pic[2] = "https://cloud.zeroarea.ml:5221/api/v3/file/get/553/pic03new.webp?sign=-6tPKe7D5bo6Q4FA4q-if_mTwdDbJPvbo8Q7J1mnoIc%3D%3A0";
+    // picpid[2] = 76685776;
+    // pic[3] = "https://cloud.zeroarea.ml:5221/api/v3/file/get/957/pic04new.webp?sign=y9Ue5XevB2gCYf1JNH_8tbO3lcX3BnDJ4eCaURRHqZg%3D%3A0";
+    // picpid[3] = 75778903;
+    // pic[4] = "https://cloud.zeroarea.ml:5221/api/v3/file/get/966/pic05new.webp?sign=4l0xy5xmC9138kN7Y1jXvlyjgru6RuaGfmxpuJtyY1Q%3D%3A0";
+    // picpid[4] = 51698567;
+    // pic[5] = "https://cloud.zeroarea.ml:5221/api/v3/file/get/962/pic06new.webp?sign=TG858chNCBA_RPFrGm29XgY_4JtljZHobSUyVHBzhwA%3D%3A0";
+    // picpid[5] = 34844544;
+    // pic[6] = "https://cloud.zeroarea.ml:5221/api/v3/file/get/964/pic07new.webp?sign=ew-wFvqpEGoJY43e6eyyOQs0t34khCCKbNFUYS--Lso%3D%3A0";
+    // picpid[6] = 88330224;
+    randompic();
+    $window.on('load', function() {
+        var a = 12000;
+        setInterval(randompic, a)
+    });
+
+    function randompic() {
+        do {
+            max = pic.length - 1;
+            temp = Math.floor(Math.random() * (max + 1))
+        } while (temp == num);
+        num = temp;
+        bgbox.addClass('black');
+        setTimeout(function() {
+            r.style.setProperty('--imgurl', 'url(' + pic[num] + ')');
+            bgbox.removeClass('black');
+            changepid()
+        }, 1000)
+    }
+    var b = {
+        useEasing: true,
+        useGrouping: false
+    };
+    new CountUp("pid", nowpid, picpid[num], 0, 2, b).start();
+    nowpid = picpid[num];
+
+    function changepid() {
+        new CountUp("pid", nowpid, picpid[num], 0, 2, b).start();
+        nowpid = picpid[num]
+    }
+    $('.aniswitch').on('click', aniswitcher);
+
+    function aniswitcher() {
+        if (ani == "开启") {
+            bgbox.addClass('black');
+            setTimeout(function() {
+                $('#particles-js').addClass('is-preload');
+                $('.bg').removeClass('anion');
+                bgbox.removeClass('black')
+            }, 1000);
+            ani = "关闭"
+        } else {
+            bgbox.addClass('black');
+            setTimeout(function() {
+                $('.bg').addClass('anion');
+                $('#particles-js').removeClass('is-preload');
+                bgbox.removeClass('black')
+            }, 1000);
+            ani = "开启"
+        }
+        $.NZ_MsgBox.toast({
+            content: "动画效果已" + ani,
+            location: "top",
+            showtime: 2500
+        })
+    }
+});

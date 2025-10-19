@@ -16,35 +16,38 @@ $(function () {
         useGrouping: false
     };
 
+    // pic webp format
     var pic = [
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/552/pic01new.webp?sign=B1iWbDd580RSTiBS23D1QNsEc-fIvUbFVOvCEhUo-yc%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/407/pic02new.webp?sign=oEJPS0C75qX5Ox1mQ7ZfIAV7XeN_iyCwUDR8VZv3kN8=:0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/553/pic03new.webp?sign=-6tPKe7D5bo6Q4FA4q-if_mTwdDbJPvbo8Q7J1mnoIc%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/957/pic04new.webp?sign=y9Ue5XevB2gCYf1JNH_8tbO3lcX3BnDJ4eCaURRHqZg%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/966/pic05new.webp?sign=4l0xy5xmC9138kN7Y1jXvlyjgru6RuaGfmxpuJtyY1Q%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/962/pic06new.webp?sign=TG858chNCBA_RPFrGm29XgY_4JtljZHobSUyVHBzhwA%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/964/pic07new.webp?sign=ew-wFvqpEGoJY43e6eyyOQs0t34khCCKbNFUYS--Lso%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3496/pic08new.webp?sign=OgAeEbAPFzvZgTDqJ6dD8penpy6rwdyyaBYWc27do0o%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3498/pic09new.webp?sign=qmsEAnzPikowmM3a63nYmvxJ7i9iTo4EHgju1uDuXRg%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3497/pic10new.webp?sign=qSSY0ItcHMvNHzZ4g9TH0MUytFKN8UWZAGiPJlQqBCE%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3501/pic11new.webp?sign=wGQIv6jyGqE46LLnplPsjAsj-DLlrQpuqYUu4P-7N-Y%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/5990/pic12new.webp?sign=Qn5gXpcX_ekt1PLZViZO2PS6tmy6W7mqX0hSZnfC1hw%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/16356/pic13new.webp?sign=NTR2IbaTbCOofyf5jIcIdVbHQAUixJc4MpZBzgPQRyE%3D%3A0"
+        "https://cloud.dorm.wenqi.icu:5221/f/wOu3/pic01new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/ryFx/pic02new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/6zIL/pic03new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/MaU8/pic04new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/DkSG/pic05new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/zLhM/pic06new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/5dC8/pic07new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/jXcW/pic08new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/okTx/pic09new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/VyfW/pic10new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/eyiN/pic11new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/EdsG/pic12new.webp",
+        "https://cloud.dorm.wenqi.icu:5221/f/ZNHo/pic13new.webp"
     ];
+    
+    // pic original format
     var pico = [
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/555/pic01new.jpg?sign=Ez3Njf5ZV4viA7dtT_wOHfL32Fz0oIf1hom2lhwc4Ig%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/408/pic02new.jpg?sign=wo36hkXAZfG11_wQfJVtufuYVDH_nZoC50KxxuGKMGo%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/554/pic03new.jpg?sign=mCmP7Sx-wMUG-D49fcIP3bMgQoPGEnKQBUq0c87drG0%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/958/pic04new.jpg?sign=WfjqROvYx_eHPTD7DXeHThzToCtN4_AeHOfkweJboj8%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/965/pic05new.jpg?sign=8n5P2gYszwA8bmRFRvyQTtAvqbS-aIiCYCuxGpYNvPg%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/961/pic06new.jpg?sign=sr3iWRNmBNnP6YrURLwrLH3yxnrAckNQOg1pYI2eKPw%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/963/pic07new.png?sign=VG41DLHybJxxlclvTWsm0YmRMNiQcB8YrL7Ivuv6dlY%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3495/pic08new.jpg?sign=u6hrVhJjaAlma5iDHTsWntAlVPe_sskn8yNJCXFrRqc%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3500/pic09new.png?sign=JzUeZ2igtf3Q4cevGPBvrfNDYGV3NGJ7uRHkN3TZjwc%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3499/pic10new.png?sign=cHxRtCfmtfrl4rgjWUQOYVE1nEJZMp8z9J88L3FRckk%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/3502/pic11new.png?sign=JY-dFR67Kh-u8IeDufDIpQ-V4uygu1c4pgNNG7X0Tq4%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/5989/pic12new.png?sign=4f1G0VUN1IXtw-yhYrBkddV9gXMssK9w8Z_bScOKE18%3D%3A0",
-        "https://cloud.wenqi.icu:5221/api/v3/file/get/16355/pic13new.jpg?sign=6zio9ALs3BotWSHXWdimf3yYQ2GNxN8SSUBJsuLwfIk%3D%3A0"
+        "https://cloud.dorm.wenqi.icu:5221/f/kxfN/pic01new.jpg",
+        "https://cloud.dorm.wenqi.icu:5221/f/QpSN/pic02new.jpg",
+        "https://cloud.dorm.wenqi.icu:5221/f/GBcv/pic03new.jpg",
+        "https://cloud.dorm.wenqi.icu:5221/f/7lTM/pic04new.jpg",
+        "https://cloud.dorm.wenqi.icu:5221/f/0GsZ/pic05new.jpg",
+        "https://cloud.dorm.wenqi.icu:5221/f/dNiQ/pic06new.jpg",
+        "https://cloud.dorm.wenqi.icu:5221/f/vGtw/pic07new.png",
+        "https://cloud.dorm.wenqi.icu:5221/f/JoHR/pic08new.jpg",
+        "https://cloud.dorm.wenqi.icu:5221/f/A0u8/pic09new.png",
+        "https://cloud.dorm.wenqi.icu:5221/f/9JFb/pic10new.png",
+        "https://cloud.dorm.wenqi.icu:5221/f/aZIj/pic11new.png",
+        "https://cloud.dorm.wenqi.icu:5221/f/3pUb/pic12new.png",
+        "https://cloud.dorm.wenqi.icu:5221/f/2ZtR/pic13new.jpg",
     ];
     var picpid = [
         83508760,

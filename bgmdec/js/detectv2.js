@@ -8,8 +8,8 @@ function testall(){
 	// NetPing("https://my.zeroarea.link/","mgc");
 	// NetPing2("https://bgm.xn--9iq62xb79b.cn/imgs/bangumi.png","txc");
 	NetPing2("https://bangumi.zeroarea.top/imgs/bangumi.png","cdf");
-	NetPing2("https://cloud.wenqi.icu:5221/api/v3/file/get/549/main_circle.svg?sign=rpVtKXXBOlFr1AbPcKvxAujbD2yTl6_U6y-HR7GBPiU%3D%3A0","cdn");
-	NetPing2("https://cloud.zeroarea.top/api/v3/file/get/549/main_circle.svg?sign=rpVtKXXBOlFr1AbPcKvxAujbD2yTl6_U6y-HR7GBPiU%3D%3A0","cdfcdn");
+	NetPing2("https://cloud.dorm.wenqi.icu:5221/f/8pCQ/main_circle.svg","cdn");
+	NetPing2("https://cloud.zeroarea.top/f/8pCQ/main_circle.svg","cdfcdn");
 	NetPing2("https://bangumi.zeroarea.top/imgs/bangumi.png","mgc");
 }
 

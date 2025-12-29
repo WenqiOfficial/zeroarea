@@ -1,9 +1,13 @@
-var liveroom = new Array,
-    videotype = 'flv';
-liveroom[0] = 'livetest';
-liveroom[1] = 'game1';
-liveroom[2] = 'game2';
-liveroom[3] = 'game3';
+var videotype = 'flv';
+
+// 房间名映射配置：Key 为 URL hash 后缀 (HTML id), Value 为直播流名称
+var roomMap = {
+    'A': 'livetest',
+    'B': 'game1',
+    'C': 'game2',
+    'D': 'game3',
+    'm': 'vocaloid'
+};
 
 function device() {
     let uap = new UAParser(window.navigator.userAgent);
@@ -27,7 +31,18 @@ function liveplay(id) {
     //     $('#l'+id).append("<p class='playerbox'><iframe allowfullscreen='allowfullscreen' mozallowfullscreen='mozallowfullscreen' msallowfullscreen='msallowfullscreen' oallowfullscreen='oallowfullscreen' webkitallowfullscreen='webkitallowfullscreen' class='liveplayer' width='100%' height='100%' scrolling='no' frameborder='0' frameborder src='liveroom/index-dplayer.html?room="+liveroom[String.fromCharCode(id.charCodeAt()-17)]+"'></iframe></p>");
     // },100)
     $('#l' + id).append("<div id='dplayer'></div>");
-    creatplayer(liveroom[String.fromCharCode(id.charCodeAt() - 17)]);
+    
+    var roomName = roomMap[id];
+    if (roomName) {
+        creatplayer(roomName);
+    } else {
+        console.warn("未找到 ID 为 " + id + " 的房间配置");
+        $.NZ_MsgBox.tipsbar({
+            title: "房间配置错误",
+            content: "无法找到对应的直播流信息",
+            type: "error"
+        });
+    }
 }
 
 function liveplaycustom() {

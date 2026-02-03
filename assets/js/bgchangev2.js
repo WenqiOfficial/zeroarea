@@ -18,36 +18,36 @@ $(function () {
 
     // pic webp format
     var pic = [
-        "https://cloud.dorm.wenqi.icu:5221/f/wOu3/pic01new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/ryFx/pic02new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/6zIL/pic03new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/MaU8/pic04new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/DkSG/pic05new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/zLhM/pic06new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/5dC8/pic07new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/jXcW/pic08new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/okTx/pic09new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/VyfW/pic10new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/eyiN/pic11new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/EdsG/pic12new.webp",
-        "https://cloud.dorm.wenqi.icu:5221/f/ZNHo/pic13new.webp"
+        "https://cloud.wenqi.icu:5221/f/wOu3/pic01new.webp",
+        "https://cloud.wenqi.icu:5221/f/ryFx/pic02new.webp",
+        "https://cloud.wenqi.icu:5221/f/6zIL/pic03new.webp",
+        "https://cloud.wenqi.icu:5221/f/MaU8/pic04new.webp",
+        "https://cloud.wenqi.icu:5221/f/DkSG/pic05new.webp",
+        "https://cloud.wenqi.icu:5221/f/zLhM/pic06new.webp",
+        "https://cloud.wenqi.icu:5221/f/5dC8/pic07new.webp",
+        "https://cloud.wenqi.icu:5221/f/jXcW/pic08new.webp",
+        "https://cloud.wenqi.icu:5221/f/okTx/pic09new.webp",
+        "https://cloud.wenqi.icu:5221/f/VyfW/pic10new.webp",
+        "https://cloud.wenqi.icu:5221/f/eyiN/pic11new.webp",
+        "https://cloud.wenqi.icu:5221/f/EdsG/pic12new.webp",
+        "https://cloud.wenqi.icu:5221/f/ZNHo/pic13new.webp"
     ];
     
     // pic original format
     var pico = [
-        "https://cloud.dorm.wenqi.icu:5221/f/kxfN/pic01new.jpg",
-        "https://cloud.dorm.wenqi.icu:5221/f/QpSN/pic02new.jpg",
-        "https://cloud.dorm.wenqi.icu:5221/f/GBcv/pic03new.jpg",
-        "https://cloud.dorm.wenqi.icu:5221/f/7lTM/pic04new.jpg",
-        "https://cloud.dorm.wenqi.icu:5221/f/0GsZ/pic05new.jpg",
-        "https://cloud.dorm.wenqi.icu:5221/f/dNiQ/pic06new.jpg",
-        "https://cloud.dorm.wenqi.icu:5221/f/vGtw/pic07new.png",
-        "https://cloud.dorm.wenqi.icu:5221/f/JoHR/pic08new.jpg",
-        "https://cloud.dorm.wenqi.icu:5221/f/A0u8/pic09new.png",
-        "https://cloud.dorm.wenqi.icu:5221/f/9JFb/pic10new.png",
-        "https://cloud.dorm.wenqi.icu:5221/f/aZIj/pic11new.png",
-        "https://cloud.dorm.wenqi.icu:5221/f/3pUb/pic12new.png",
-        "https://cloud.dorm.wenqi.icu:5221/f/2ZtR/pic13new.jpg",
+        "https://cloud.wenqi.icu:5221/f/kxfN/pic01new.jpg",
+        "https://cloud.wenqi.icu:5221/f/QpSN/pic02new.jpg",
+        "https://cloud.wenqi.icu:5221/f/GBcv/pic03new.jpg",
+        "https://cloud.wenqi.icu:5221/f/7lTM/pic04new.jpg",
+        "https://cloud.wenqi.icu:5221/f/0GsZ/pic05new.jpg",
+        "https://cloud.wenqi.icu:5221/f/dNiQ/pic06new.jpg",
+        "https://cloud.wenqi.icu:5221/f/vGtw/pic07new.png",
+        "https://cloud.wenqi.icu:5221/f/JoHR/pic08new.jpg",
+        "https://cloud.wenqi.icu:5221/f/A0u8/pic09new.png",
+        "https://cloud.wenqi.icu:5221/f/9JFb/pic10new.png",
+        "https://cloud.wenqi.icu:5221/f/aZIj/pic11new.png",
+        "https://cloud.wenqi.icu:5221/f/3pUb/pic12new.png",
+        "https://cloud.wenqi.icu:5221/f/2ZtR/pic13new.jpg",
     ];
     var picpid = [
         83508760,
